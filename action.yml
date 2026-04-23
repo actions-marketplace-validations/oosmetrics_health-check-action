@@ -1,0 +1,13 @@
+name: 'oosmetrics Health Check'
+description: 'Weekly momentum report for your GitHub repo - growth rate, acceleration, originality grades, and category rankings.'
+branding:
+  icon: 'trending-up'
+  color: 'blue'
+inputs:
+  api-url:
+    description: 'oosmetrics API base URL (override for testing)'
+    default: 'https://api.oosmetrics.com'
+    required: false
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
